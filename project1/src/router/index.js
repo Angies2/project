@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import Pic from '@/components/Pic'
+import first from '@/components/first'
+import second from '@/components/second'
+import third from '@/components/third'
+import last from '@/components/last'
 
 Vue.use(Router)
-
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello
+    {path: '/', redirect: '/index'},
+    {path: '/index', component: Pic, children: [{path: 'first', component: first}, {path: 'second', component: second}, {path: 'third', component: third}, {path: 'last', component: last}]
     }
   ]
 })
