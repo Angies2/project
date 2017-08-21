@@ -10,7 +10,9 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {path: '/', redirect: '/index'},
-    {path: '/index', component: Pic, children: [{path: 'first', component: first}, {path: 'second', component: second}, {path: 'third', component: third}, {path: 'last', component: last}]
-    }
-  ]
+    {path: '/index', component: Pic},
+    {path: '/first', component: first},
+    {path: '/second', component: second},
+    {path: '/third', component: third},
+    {path: '/last', component: last}]
 })

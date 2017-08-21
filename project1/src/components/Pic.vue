@@ -2,10 +2,10 @@
   <div class="">
     <h1>{{ msg }}</h1>
     <div class="pic-nature">
-      <img src="../assets/11.jpg">
-      <img src="../assets/22.jpg">
-      <img src="../assets/33.jpg">
-      <img src="../assets/44.jpg">
+      <router-link :to="{ path: '/first' }"><img src="../assets/11.jpg"></router-link>
+      <router-link :to="{ path: '/second' }"><img src="../assets/22.jpg"></router-link>
+      <router-link :to="{ path: '/third' }"><img src="../assets/33.jpg"></router-link>
+      <router-link :to="{ path: '/last' }"><img src="../assets/44.jpg"></router-link>
     </div>
   </div>
 </template>
